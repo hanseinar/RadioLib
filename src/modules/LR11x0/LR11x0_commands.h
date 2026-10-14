@@ -340,7 +340,8 @@
 #define RADIOLIB_LR11X0_PACKET_TYPE_BLE                         (0x06UL << 0)   //  2     0                  BLE beacon
 
 // RADIOLIB_LR11X0_CMD_SET_MODULATION_PARAMS
-#define RADIOLIB_LR11X0_LORA_BW_62_5                            (0x03UL << 0)   //  7     0     LoRa bandwidth: 62.5 kHz
+#define RADIOLIB_LR11X0_LORA_BW_31_25                           (0x02UL << 0)   //  7     0     LoRa bandwidth: 31.25 kHz (not in datasheet, from Semtech SWDR001)
+#define RADIOLIB_LR11X0_LORA_BW_62_5                            (0x03UL << 0)   //  7     0                      62.5 kHz
 #define RADIOLIB_LR11X0_LORA_BW_125_0                           (0x04UL << 0)   //  7     0                     125.0 kHz
 #define RADIOLIB_LR11X0_LORA_BW_250_0                           (0x05UL << 0)   //  7     0                     250.0 kHz
 #define RADIOLIB_LR11X0_LORA_BW_500_0                           (0x06UL << 0)   //  7     0                     500.0 kHz

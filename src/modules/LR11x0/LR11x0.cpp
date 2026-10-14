@@ -531,6 +531,9 @@ int16_t LR11x0::setBandwidth(float bw, bool high) {
     // check allowed bandwidth values
     uint8_t bw_div2 = bw / 2 + 0.01f;
     switch (bw_div2)  {
+      case 15: // 31.25
+        this->bandwidth = RADIOLIB_LR11X0_LORA_BW_31_25;
+        break;
       case 31: // 62.5:
         this->bandwidth = RADIOLIB_LR11X0_LORA_BW_62_5;
         break;
